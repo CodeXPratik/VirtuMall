@@ -13,6 +13,6 @@ class SavedPage extends StatelessWidget {
       body: SingleChildScrollView(
 
       ),
-    );;
+    );
   }
 }
