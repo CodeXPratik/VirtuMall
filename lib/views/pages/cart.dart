@@ -7,7 +7,11 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  AppBar(
-        title: Text('Cart'),
+        title: Text('Cart',
+        style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),),
         centerTitle: true,
       ),
       body: SingleChildScrollView(

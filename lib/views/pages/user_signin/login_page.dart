@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               const Text(
                 'Email',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 8),
               TextField(
@@ -109,6 +109,33 @@ class _LoginPageState extends State<LoginPage> {
                     );
                   },
                   child: const Text('Login'),
+                ),
+              ),
+              Center(
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Don\'t have an account? ',
+                    style: const TextStyle(color: Colors.black, fontSize: 16),
+                    children: [
+                      TextSpan(
+                        text: 'Join',
+                        style: const TextStyle(
+                          color: Colors.blue,
+                          decoration: TextDecoration.underline,
+                        ),
+                        recognizer:
+                        TapGestureRecognizer()
+                          ..onTap = () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const CreateAccount(),
+                              ),
+                            );
+                          },
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

@@ -16,7 +16,10 @@ class WelcomePage extends StatelessWidget {
             children: [
               Text(
                 'Augment Your Shopping Experience, Virtually & Beyond.',
-                style: TextStyle(fontSize: 45),
+
+                style: TextStyle(fontFamily: 'GeneralSans',
+                fontWeight: FontWeight.bold,
+                fontSize: 45),
                 textAlign: TextAlign.left,
               ),
               SizedBox(

@@ -85,10 +85,10 @@ flutter:
         - asset: assets/fonts/GeneralSans-MediumItalic.otf
         - asset: assets/fonts/GeneralSans-Light.otf
         - asset: assets/fonts/GeneralSans-LightItalic.otf
-        - asset: assets/fonts/GeneralSans-ExtraLight.otf
-        - asset: assets/fonts/GeneralSans-ExtraLightItalic.otf
-        - asset: assets/fonts/GeneralSans-SemiBold.otf
-        - asset: assets/fonts/GeneralSans-SemiBoldItalic.otf
+        - asset: assets/fonts/GeneralSans-Extralight.otf
+        - asset: assets/fonts/GeneralSans-ExtralightItalic.otf
+        - asset: assets/fonts/GeneralSans-Semibold.otf
+        - asset: assets/fonts/GeneralSans-SemiboldItalic.otf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

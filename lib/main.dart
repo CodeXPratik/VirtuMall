@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'VirtuMall',
       theme: ThemeData(
+        fontFamily: 'GeneralSans',
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.black,
           primary: Colors.black, // Set the primary color for buttons

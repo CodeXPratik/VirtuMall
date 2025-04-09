@@ -9,7 +9,11 @@ class AccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Account'), centerTitle: true),
+      appBar: AppBar(title: const Text('Account',
+      style: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+      ),), centerTitle: true),
       body: Column(
         children: [
           ListTile(
