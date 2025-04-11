@@ -11,7 +11,7 @@ class NotificationsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Notifications',
         style: TextStyle(
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w600,
           fontSize: 24,
         ),),
         centerTitle: true,

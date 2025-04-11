@@ -12,7 +12,7 @@ class AccountPage extends StatelessWidget {
       appBar: AppBar(title: const Text('Account',
       style: TextStyle(
         fontSize: 24,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w600,
       ),), centerTitle: true),
       body: Column(
         children: [

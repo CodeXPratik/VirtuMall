@@ -18,8 +18,8 @@ class WelcomePage extends StatelessWidget {
                 'Augment Your Shopping Experience, Virtually & Beyond.',
 
                 style: TextStyle(fontFamily: 'GeneralSans',
-                fontWeight: FontWeight.bold,
-                fontSize: 45),
+                fontWeight: FontWeight.w600,
+                fontSize: 46),
                 textAlign: TextAlign.left,
               ),
               SizedBox(

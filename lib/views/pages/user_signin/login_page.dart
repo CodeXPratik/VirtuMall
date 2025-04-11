@@ -20,10 +20,13 @@ class _LoginPageState extends State<LoginPage> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text('Login to your account'),
+            Text('Login to your account',
+            style: TextStyle(
+              fontSize: 30, fontWeight: FontWeight.w600,
+            ),),
             Text(
               'It\'s great to see you again',
-              style: TextStyle(fontSize: 12, color: Colors.grey),
+              style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ],
         ),
@@ -36,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               const Text(
                 'Email',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 8),
               TextField(
@@ -49,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 16),
               const Text(
                 'Password',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 8),
               TextField(
@@ -72,10 +75,11 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 obscureText: !_isPasswordVisible, // Control password visibility
               ),
+              SizedBox(height: 15),
               RichText(
                 text: TextSpan(
                   text: 'Forgot your password? ',
-                  style: const TextStyle(color: Colors.black, fontSize: 16),
+                  style: const TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
                   children: [
                     TextSpan(
                       text: 'Reset your Password',
@@ -111,6 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text('Login'),
                 ),
               ),
+              Spacer(),
               Center(
                 child: RichText(
                   text: TextSpan(

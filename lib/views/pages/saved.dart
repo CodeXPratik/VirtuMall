@@ -9,7 +9,7 @@ class SavedPage extends StatelessWidget {
       appBar:  AppBar(
         title: Text('Saved',
         style: TextStyle(
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w600,
           fontSize: 24,
         ),),
         centerTitle: true,
