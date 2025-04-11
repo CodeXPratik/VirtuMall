@@ -66,7 +66,6 @@ class _HomePageState extends State<HomePage> {
                   setState(() {
                     _searchTerm = value;
                   });
-                  // Implement your search logic here.
                   if (kDebugMode) {
                     print('Search term: $_searchTerm');
                   }
@@ -75,12 +74,12 @@ class _HomePageState extends State<HomePage> {
 
               const SizedBox(
                 height: 16.0,
-              ), // Spacing between TextField and buttons
+              ),
               // Row of Buttons
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                  spacing: 8.0, // Horizontal spacing between buttons
+                  spacing: 8.0,
                   children: [
                     FilledButton(onPressed: () {}, child: const Text('All')),
                     FilledButton(

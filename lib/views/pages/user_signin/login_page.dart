@@ -68,12 +68,12 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () {
                       setState(() {
                         _isPasswordVisible =
-                            !_isPasswordVisible; // Toggle visibility
+                            !_isPasswordVisible;
                       });
                     },
                   ),
                 ),
-                obscureText: !_isPasswordVisible, // Control password visibility
+                obscureText: !_isPasswordVisible,
               ),
               SizedBox(height: 15),
               RichText(

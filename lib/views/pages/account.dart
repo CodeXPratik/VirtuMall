@@ -19,73 +19,55 @@ class AccountPage extends StatelessWidget {
       body: Column(
         children: [
           ListTile(
-            leading: const Icon(
-              Icons.card_giftcard_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.card_giftcard_outlined),
             title: const Text('My Orders'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.person_outline,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.person_outline),
             title: const Text('My Details'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.house_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.house_outlined),
             title: const Text('Address Book'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.payment_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.payment_outlined),
             title: const Text('Payments Method'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.notifications_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.notifications_outlined),
             title: const Text('Notifications'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.question_answer_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.question_answer_outlined),
             title: const Text('FAQ\'s'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.description_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.description_outlined),
             title: const Text('My Details'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.help_center_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.help_center_outlined),
             title: const Text('Help Center'),
             trailing: const Icon(Icons.chevron_right),
-            onTap: () {}, // Callback function when the item is tapped
+            onTap: () {},
           ),
           ListTile(
-            leading: const Icon(
-              Icons.logout_outlined,
-            ), // Replace with your desired icon
+            leading: const Icon(Icons.logout_outlined),
             title: const Text('Logout'),
             trailing: const Icon(Icons.chevron_right),
             onTap: () {
@@ -94,7 +76,7 @@ class AccountPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(builder: (context) => WelcomePage()),
               );
-            }, // Callback function when the item is tapped
+            },
           ),
         ],
       ),
