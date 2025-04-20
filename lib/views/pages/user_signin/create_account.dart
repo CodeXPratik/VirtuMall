@@ -99,7 +99,14 @@ class _CreateAccountState extends State<CreateAccount> {
                       const SnackBar(content: Text('Account Created!')),
                     );
                   },
-                  child: const Text('Create an Account'),
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        10.0,
+                      ), // Adjust the radius as needed
+                    ),
+                  ),
+                  child: const Text('Create an Account', style: TextStyle(fontSize: 15.0),),
                 ),
               ),
               Spacer(),

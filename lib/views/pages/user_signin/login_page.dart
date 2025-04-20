@@ -20,10 +20,10 @@ class _LoginPageState extends State<LoginPage> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text('Login to your account',
-            style: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.w600,
-            ),),
+            Text(
+              'Login to your account',
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+            ),
             Text(
               'It\'s great to see you again',
               style: TextStyle(fontSize: 16, color: Colors.grey),
@@ -67,8 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     onPressed: () {
                       setState(() {
-                        _isPasswordVisible =
-                            !_isPasswordVisible;
+                        _isPasswordVisible = !_isPasswordVisible;
                       });
                     },
                   ),
@@ -79,7 +78,11 @@ class _LoginPageState extends State<LoginPage> {
               RichText(
                 text: TextSpan(
                   text: 'Forgot your password? ',
-                  style: const TextStyle(color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                  ),
                   children: [
                     TextSpan(
                       text: 'Reset your Password',
@@ -109,10 +112,19 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const WidgetTree()),
+                      MaterialPageRoute(
+                        builder: (context) => const WidgetTree(),
+                      ),
                     );
                   },
-                  child: const Text('Login'),
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        10.0,
+                      ), // Adjust the radius as needed
+                    ),
+                  ),
+                  child: const Text('Login', style: TextStyle(fontSize: 15.0),),
                 ),
               ),
               Spacer(),
@@ -129,15 +141,15 @@ class _LoginPageState extends State<LoginPage> {
                           decoration: TextDecoration.underline,
                         ),
                         recognizer:
-                        TapGestureRecognizer()
-                          ..onTap = () {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const CreateAccount(),
-                              ),
-                            );
-                          },
+                            TapGestureRecognizer()
+                              ..onTap = () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const CreateAccount(),
+                                  ),
+                                );
+                              },
                       ),
                     ],
                   ),

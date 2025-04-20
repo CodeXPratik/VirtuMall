@@ -17,22 +17,37 @@ class WelcomePage extends StatelessWidget {
               Text(
                 'Augment Your Shopping Experience, Virtually & Beyond.',
 
-                style: TextStyle(fontFamily: 'GeneralSans',
-                fontWeight: FontWeight.w600,
-                fontSize: 46),
+                style: TextStyle(
+                  fontFamily: 'GeneralSans',
+                  fontWeight: FontWeight.w600,
+                  fontSize: 46,
+                ),
                 textAlign: TextAlign.left,
               ),
               SizedBox(
                 width: double.infinity,
                 height: 54,
+
                 child: FilledButton(
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const CreateAccount()),
+                      MaterialPageRoute(
+                        builder: (context) => const CreateAccount(),
+                      ),
                     );
                   },
-                  child: const Text('Get Started'),
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        10.0,
+                      ), // Adjust the radius as needed
+                    ),
+                  ),
+                  child: const Text(
+                    'Get Started',
+                    style: TextStyle(fontSize: 15.0),
+                  ),
                 ),
               ),
             ],
